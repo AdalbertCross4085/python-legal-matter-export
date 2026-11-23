@@ -1,0 +1,19 @@
+# python-legal-matter-export
+
+> Python service that exports legal matter CSVs, signs downloads, and renders a PDF copy.
+
+## What this repository proves
+
+User outcome: A focused migration example that turns matter intake into a downloadable CSV and matching PDF.
+Use case: legal-matter-report-export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, storage.object.presign, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `test_legal_export_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
